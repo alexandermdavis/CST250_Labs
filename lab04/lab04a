@@ -1,0 +1,32 @@
+public class MainClass {
+
+	public static int mySearch(char[] inputArray, char n) {
+		
+//		int key = -51;
+//		String key = "Tyler";
+//		float key = 2.5;
+		char key = 'n';
+		
+		for(int i = 0; i < inputArray.length; i++){
+			if(inputArray[i] == key){
+				return i;
+			}
+			
+		}
+				return -1;
+	}
+	
+	public static void main(String[] args) {
+		
+//	int[] inputArray = {};
+//	int[] inputArray = {5 ,22, 71, 10, 521, 341, -51, 0};
+//	String[] inputArray = {"Bob", "Joe", "Alex", "Mike", "Ben", "Tyler"};
+//	float[] inputArray = {2.5, 81.7, 71.2, 36.2, 90.5};
+	char[] inputArray = {'g', 'y', 'l', 'q', 'f', 'l', 'a', 'n', 'i', 'z'};
+	
+
+		System.out.println(mySearch(inputArray, ' '));
+
+	}
+
+}

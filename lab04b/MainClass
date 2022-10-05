@@ -1,8 +1,37 @@
-public class Mainclass {
-    
-    public static void main(String[] args) {
+public class MainClass {
 
+	public static void mySort(int[] inputArray) {
+		
+		int arraySize = inputArray.length;
+		
+			for (int i = 0; i < arraySize - 1; i++) {
+				int index = i;
+				
+				for (int j = i + 1; j < arraySize; j++) {
+					if (inputArray[j] < inputArray[index]){
+						index = j;
+				}
+		}
+			int temp = inputArray[i];
+				inputArray[i] = inputArray[index];
+				inputArray[index] = temp;
+					
+		}
 
+	}
+	
+	public static void main(String a[]) {
+		
+		int[] inputArray = {5 ,22, 71, 10, 521, 341, -51, 0, -519, -1691, 6981, 102};
 
-    }
+		mySort(inputArray);
+		
+		System.out.print("After the selection sort: ");
+		for(int i:inputArray) {
+			System.out.print(i + " ");
+			
+		}
+
+	}
+
 }
